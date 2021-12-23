@@ -1,0 +1,12 @@
+Create right angled triangles using the tool rigid polygon
+design the triangles and place on the axes
+create a slider a and b.
+Input a^2+b^2
+d=sqrt(c)
+create a input box as base=a
+create a input box as height=b
+create a input box calculate the largest side
+Hide the sliders.
+Use the textbox to show largest side=d
+Use a check box as show answer and link with step9.
+End
