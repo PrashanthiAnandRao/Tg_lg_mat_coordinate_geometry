@@ -1,0 +1,18 @@
+If the segments joining the points A(a,b) and B(c,d) subtends an angle \theta, at the origin, then what will be the \theta.
+Create a textbox.
+text:If the segments joining the points A and B subtends an angle \theta at the origin, find the angle \cos(\theta)
+A=(a,b)
+B=(c,d)
+O=(0,0)
+l=Segment(O,A)
+m=Segment(O,B)
+n=Segment(A,B)
+AOB=\theta
+l^2=a^2+b^2
+m^2=c^2+d^2
+n^2=(c-a)^2+(d-b)^2
+f=a*c+b*d
+Text box: k=\dfrac{f}{l*m}
+Use cosine formula for triangle OAB, \cos{\theta}=k
+Create a text box to show the angle cos(\theta).
+https://www.geogebra.org/m/sn3jsuzt
