@@ -1,0 +1,23 @@
+To identify different types of triangles from its vertices
+A=(x_1,y_1)
+B=(x_2,y_2)
+C=(x_3,y_3)
+Create a input box for A,B and C
+Hide the sliders
+c=Segment(A,B)
+a=Segment(B,C)
+b=Segment(C,A)
+d=a^2
+e=b^2
+f=c^2
+If(a==b,"The triangle is isosceles", 
+   If(a==c,"The triangle is isosceles",
+      If(a+b==c, "The points are collinear",
+         If(b+c==a,"The points are collinear",
+            If(c+a==b,"The points are collinear",
+               If(d+e==f,"The triangle is Right-angled triangle",
+                  If(e+f==d,"The triangle is Right-angled triangle",
+                     If(f+d==e,"The triangle is Right-angled triangle",
+                        If(a==b==c,"The triangle is equilateral",
+                            "The triangle is a scalene triangle")))))))))
+         End
