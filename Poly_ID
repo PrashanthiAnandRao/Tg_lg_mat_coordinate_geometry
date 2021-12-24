@@ -1,0 +1,42 @@
+To identify different types of quadrilaterals from its vertices
+A=(x_1,y_1)
+B=(x_2,y_2)
+C=(x_3,y_3)
+D=(x_4,y_4)
+Create a input box for A,B,c and D
+Hide the sliders
+a=Segment(A,B)
+b=Segment(B,C)
+c=Segment(C,D)
+d=Segment(D,A)
+e=Segment(A,C)
+f=Segment(B,D)
+Place point on the intersection of AC and BD using point on object tool
+g=distance(A,O)
+h=distance(O,C)
+i=distance(O,D)
+j=distance(O,B)
+\alpha=Use the angle tool and measure angle DAB
+\beta=Use the angle tool and measure angle ABC
+\gamma=Use the angle tool and measure angle BCD
+\delta=Use the angle tool and measure angle CDA
+If(a==c, "ABCD is a rectangle",
+  If(d==b,"ABCD is a rectangle",
+    If(g==h,"ABCD is a rectangle",
+        If(i==j,"ABCD is a rectangle",
+            If(α==β==γ==δ,"ABCD is a rectangle",
+              If( a==c, "ABCD is a parallelogram",
+                If(b==d,"ABCD is a parallelogram",
+                  If(g==h,"ABCD is a parallelogram",
+                    If(i==j,"ABCD is a parallelogram",
+                      If(α==γ,"ABCD is a parallelogram",
+                        If(β==δ,"ABCD is a parallelogram",
+                          If( a==b==c==d, "ABCD is a rhombus",
+                            If(g==h,"ABCD is a rhombus",
+                              If(i==j,"ABCD is a rhombus",
+                                If(α==γ,"ABCD is a rhombus",
+                                  If(β==δ,"ABCD is a rhombus",
+                                    If( a==b==c==d, "ABCD is a square",
+                                      If(g==h,"ABCD is a square",i==j,
+                                        If("ABCD is a square",α==β==γ==δ,
+                                          If("ABCD is a square", "ABCD is a trapezium")))))))))))))))))))) 
